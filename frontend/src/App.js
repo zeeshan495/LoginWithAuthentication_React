@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-
+import { tokenLoader } from './util/auth';
 import EditEventPage from './pages/EditEvent';
 import ErrorPage from './pages/Error';
 import EventDetailPage, {
@@ -14,12 +14,15 @@ import NewEventPage from './pages/NewEvent';
 import RootLayout from './pages/Root';
 import { action as manipulateEventAction } from './components/EventForm';
 import NewsletterPage, { action as newsletterAction } from './pages/Newsletter';
+import { action as logoutAction } from './pages/Logout';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     errorElement: <ErrorPage />,
+    id:'root',
+    loader: tokenLoader,
     children: [
       { index: true, element: <HomePage /> },
       {
@@ -65,6 +68,10 @@ const router = createBrowserRouter([
         element: <NewsletterPage />,
         action: newsletterAction,
       },
+      {
+        path: 'logout',
+        action: logoutAction,
+      }
     ],
   },
 ]);
