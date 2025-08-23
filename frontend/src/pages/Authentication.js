@@ -41,5 +41,9 @@ export async function action({ request }) {
   }
 
   // return response;
+  const resData = await response.json();
+  localStorage.setItem('token', resData.token);
+  localStorage.setItem('expiration', resData.expiration);
+  localStorage.setItem('userId', resData.userId);
   return redirect('/');
 }
