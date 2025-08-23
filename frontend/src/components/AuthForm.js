@@ -1,14 +1,8 @@
-// import { useState } from 'react';
 import { Form, Link, useSearchParams, useActionData, useNavigation } from 'react-router-dom';
 
 import classes from './AuthForm.module.css';
 
 function AuthForm() {
-  // const [isLogin, setIsLogin] = useState(true);
-
-  // function switchAuthHandler() {
-  //   setIsLogin((isCurrentlyLogin) => !isCurrentlyLogin);
-  // }
   const data = useActionData();
   console.log(data);
   const navigation = useNavigation();
