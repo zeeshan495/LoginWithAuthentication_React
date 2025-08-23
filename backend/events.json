@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/M%C3%BCnchen_Panorama.JPG/1024px-M%C3%BCnchen_Panorama.JPG",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"A new event","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/M%C3%BCnchen_Panorama.JPG/1024px-M%C3%BCnchen_Panorama.JPG","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"}],"users":[{"email":"asdasdf@gmail.com","password":"$2a$12$6lhJpXp4oGjHUPj2.NpB0uoDOaAKfhHJx4zRtnrHRtb/5cp8pTaSm","id":"b89a6b49-e43a-4dc1-8207-e271b97f56bd"},{"email":"asdasdfqwer@gmail.com","password":"$2a$12$daOOu4fclbKFvDm42gnqruE5hyJkMEHA0C/Y9lyBZDHzi2Qi.yvTy","id":"862935ca-31c8-4fc7-9e18-d0345c223466"},{"email":"test@test.com","password":"$2a$12$Yk0dt0H8AKB60Y.UwXn2vOleQjAn2OVkcc6e7IZb/Pb4/kDo/WLZS","id":"f26ed190-16ef-4ab6-a922-2287131bea01"}]}
