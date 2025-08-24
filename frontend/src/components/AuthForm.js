@@ -4,11 +4,9 @@ import classes from './AuthForm.module.css';
 
 function AuthForm() {
   const data = useActionData();
-  console.log(data);
   const navigation = useNavigation();
   const isSubmitting = navigation.state === 'submitting';
-  // const isLoading = navigation.state === 'loading';
-  // console.log(isLoading);
+
   const [searchParams] = useSearchParams();
   const isLogin = searchParams.get('mode') === 'login';
   return (

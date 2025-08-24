@@ -28,4 +28,5 @@ export function getAuthToken() {
         if (!token) {
             return redirect('/auth');
         }
+        return token;
     }

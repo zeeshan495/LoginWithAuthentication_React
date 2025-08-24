@@ -16,6 +16,5 @@ export async function action({ request }) {
   const email = data.get('email');
 
   // send to backend newsletter server ...
-  console.log(email);
   return { message: 'Signup successful!' };
 }
